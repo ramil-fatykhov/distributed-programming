@@ -19,6 +19,7 @@ namespace Frontend.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
         }
 
         public IActionResult Index()
@@ -31,9 +32,8 @@ namespace Frontend.Controllers
         {
             if (description == null)
             {
-                return View("Error", new ErrorViewModel {RequestId = "Description must be filled"});
+                return View("Error", new ErrorViewModel {RequestId = "Description can't be null"});
             }
-            AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
             using var channel = GrpcChannel.ForAddress("http://localhost:5000");
             var client = new Job.JobClient(channel);
             var response = await client.RegisterAsync(new RegisterRequest { Description = description });

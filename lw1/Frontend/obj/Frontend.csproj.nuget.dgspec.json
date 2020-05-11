@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ramik-PC\\Desktop\\ds-1-master\\src\\Frontend\\Frontend.csproj": {}
+    "E:\\Projects\\distributed-programming\\lw1\\Frontend\\Frontend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ramik-PC\\Desktop\\ds-1-master\\src\\Frontend\\Frontend.csproj": {
+    "E:\\Projects\\distributed-programming\\lw1\\Frontend\\Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ramik-PC\\Desktop\\ds-1-master\\src\\Frontend\\Frontend.csproj",
+        "projectUniqueName": "E:\\Projects\\distributed-programming\\lw1\\Frontend\\Frontend.csproj",
         "projectName": "Frontend",
-        "projectPath": "C:\\Users\\Ramik-PC\\Desktop\\ds-1-master\\src\\Frontend\\Frontend.csproj",
-        "packagesPath": "C:\\Users\\Ramik-PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ramik-PC\\Desktop\\ds-1-master\\src\\Frontend\\obj\\",
+        "projectPath": "E:\\Projects\\distributed-programming\\lw1\\Frontend\\Frontend.csproj",
+        "packagesPath": "C:\\Users\\ramik\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\distributed-programming\\lw1\\Frontend\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ramik-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ramik\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
