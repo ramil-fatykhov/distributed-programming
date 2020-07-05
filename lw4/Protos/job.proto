@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option csharp_namespace = "BackendApi";
+
+package job;
+
+service Job {
+  rpc Register (RegisterRequest) returns (RegisterResponse);
+
+  rpc GetProcessingResult (GetProcessingResultRequest) returns (GetProcessingResultResponse);
+}
+
+message RegisterRequest {
+  string description = 1;
+  string data = 2;
+}
+
+message RegisterResponse {
+  string id = 1;
+}
+
+message GetProcessingResultResponse {
+  double rank = 1;
+  string status = 2;
+}
+
+message GetProcessingResultRequest {
+  string id = 1;
+}
